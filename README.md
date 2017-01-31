@@ -1,2 +1,2 @@
-# applied-programming
-Code written for the applied programming course
+# Applied Programming 2016
+Code written for the applied programming course, term four, 2016.
