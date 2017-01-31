@@ -4,9 +4,15 @@
 using namespace std;
 
 int diceRoller(int attackerTroops, int defenderTroops);
+void throw3v2(int *attackerTroops, int *defenderTroops);
 
 int main() {
-  cout << diceRoller(5,6) << endl;
+  int redTroops = 5;
+  int blueTroops = 6;
+
+  throw3v2(&redTroops, &blueTroops);
+
+  diceRoller(redTroops,blueTroops);
    
   return 0;
 }
@@ -16,4 +22,9 @@ int diceRoller(int attackerTroops, int defenderTroops) {
   cout << "defenderTroops = " << defenderTroops << endl;
 
   return 5;
+}
+
+void throw3v2(int *attackerTroops, int *defenderTroops) {
+  *attackerTroops += 1;
+  *defenderTroops -= 1;
 }
